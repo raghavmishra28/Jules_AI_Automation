@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Command_line_suite" class="navigator-link">
-              <span class="suite-name border-failed">Command line suite</span>
+              <span class="suite-name border-passed">Command line suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,26 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods, 2 failed,   1 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Command_line_suite" class="hide-methods failed suite-Command_line_suite"> (hide)</a> <!-- hide-methods failed suite-Command_line_suite -->
-                      <a href="#" panel-name="suite-Command_line_suite" class="show-methods failed suite-Command_line_suite"> (show)</a> <!-- show-methods failed suite-Command_line_suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Command_line_suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="demo.Login" class="method navigator-link" hash-for-method="invalid_email">invalid_email</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="demo.Login" class="method navigator-link" hash-for-method="invalid_passwword">invalid_passwword</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Command_line_suite -->
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -120,6 +101,16 @@
                       <a href="#" panel-name="suite-Command_line_suite" class="show-methods passed suite-Command_line_suite"> (show)</a> <!-- show-methods passed suite-Command_line_suite -->
                     </span>
                     <div class="method-list-content passed suite-Command_line_suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="demo.Login" class="method navigator-link" hash-for-method="invalid_email">invalid_email</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="demo.Login" class="method navigator-link" hash-for-method="invalid_passwword">invalid_passwword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Command_line_suite" title="demo.Login" class="method navigator-link" hash-for-method="successful_login">successful_login</a> <!-- method navigator-link -->
@@ -137,9 +128,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Command_line_suite" class="panel Command_line_suite">
-          <div class="suite-Command_line_suite-class-failed">
+          <div class="suite-Command_line_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
               <span class="class-name">demo.Login</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -148,52 +139,6 @@
                   <a name="invalid_email">
                   </a> <!-- invalid_email -->
                   <span class="method-name">invalid_email</span>
-                  <div class="stack-trace">com.microsoft.playwright.TimeoutError: Error {
-  message=&apos;Timeout 30000ms exceeded.
-  name=&apos;TimeoutError
-  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
-    at ProgressController.run (C:\Users\Asus\AppData\Local\Temp\playwright-java-3431928606575065110\package\lib\server\progress.js:78:26)
-    at Frame.waitForSelector (C:\Users\Asus\AppData\Local\Temp\playwright-java-3431928606575065110\package\lib\server\frames.js:619:23)
-    at FrameDispatcher.waitForSelector (C:\Users\Asus\AppData\Local\Temp\playwright-java-3431928606575065110\package\lib\server\dispatchers\frameDispatcher.js:105:103)
-    at FrameDispatcher._handleCommand (C:\Users\Asus\AppData\Local\Temp\playwright-java-3431928606575065110\package\lib\server\dispatchers\dispatcher.js:94:40)
-    at DispatcherConnection.dispatch (C:\Users\Asus\AppData\Local\Temp\playwright-java-3431928606575065110\package\lib\server\dispatchers\dispatcher.js:361:39)
-}
-Call log:
-- waiting for locator(&quot;text=Invalid email or password&quot;) to be visible
-
-	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
-	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
-	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
-	at com.microsoft.playwright.impl.FrameImpl.waitForSelectorImpl(FrameImpl.java:1060)
-	at com.microsoft.playwright.impl.FrameImpl.waitForSelectorImpl(FrameImpl.java:1050)
-	at com.microsoft.playwright.impl.PageImpl.lambda$waitForSelector$93(PageImpl.java:1553)
-	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
-	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
-	at com.microsoft.playwright.impl.PageImpl.waitForSelector(PageImpl.java:1552)
-	at com.microsoft.playwright.Page.waitForSelector(Page.java:8257)
-	at demo.Login.invalid_email(Login.java:63)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at demo.Login.main(Login.java:90)
-Caused by: com.microsoft.playwright.TimeoutError: Error {
-  message=&apos;Timeout 30000ms exceeded.
-  name=&apos;TimeoutError
-  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
-    at ProgressController.run (C:\Users\Asus\AppData\Local\Temp\playwright-java-3431928606575065110\package\lib\server\progress.js:78:26)
-    at Frame.waitForSelector (C:\Users\Asus\AppData\Local\Temp\playwright-java-3431928606575065110\package\lib\server\frames.js:619:23)
-    at FrameDispatcher.waitForSelector (C:\Users\Asus\AppData\Local\Temp\playwright-java-3431928606575065110\package\lib\server\dispatchers\frameDispatcher.js:105:103)
-    at FrameDispatcher._handleCommand (C:\Users\Asus\AppData\Local\Temp\playwright-java-3431928606575065110\package\lib\server\dispatchers\dispatcher.js:94:40)
-    at DispatcherConnection.dispatch (C:\Users\Asus\AppData\Local\Temp\playwright-java-3431928606575065110\package\lib\server\dispatchers\dispatcher.js:361:39)
-}
-Call log:
-- waiting for locator(&quot;text=Invalid email or password&quot;) to be visible
-
-	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:254)
-	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
-	... 36 more
-... Removed 24 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -201,62 +146,8 @@ Call log:
                   <a name="invalid_passwword">
                   </a> <!-- invalid_passwword -->
                   <span class="method-name">invalid_passwword</span>
-                  <div class="stack-trace">com.microsoft.playwright.TimeoutError: Error {
-  message=&apos;Timeout 30000ms exceeded.
-  name=&apos;TimeoutError
-  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
-    at ProgressController.run (C:\Users\Asus\AppData\Local\Temp\playwright-java-3431928606575065110\package\lib\server\progress.js:78:26)
-    at Frame.waitForSelector (C:\Users\Asus\AppData\Local\Temp\playwright-java-3431928606575065110\package\lib\server\frames.js:619:23)
-    at FrameDispatcher.waitForSelector (C:\Users\Asus\AppData\Local\Temp\playwright-java-3431928606575065110\package\lib\server\dispatchers\frameDispatcher.js:105:103)
-    at FrameDispatcher._handleCommand (C:\Users\Asus\AppData\Local\Temp\playwright-java-3431928606575065110\package\lib\server\dispatchers\dispatcher.js:94:40)
-    at DispatcherConnection.dispatch (C:\Users\Asus\AppData\Local\Temp\playwright-java-3431928606575065110\package\lib\server\dispatchers\dispatcher.js:361:39)
-}
-Call log:
-- waiting for locator(&quot;text=Invalid email or password&quot;) to be visible
-
-	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
-	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
-	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
-	at com.microsoft.playwright.impl.FrameImpl.waitForSelectorImpl(FrameImpl.java:1060)
-	at com.microsoft.playwright.impl.FrameImpl.waitForSelectorImpl(FrameImpl.java:1050)
-	at com.microsoft.playwright.impl.PageImpl.lambda$waitForSelector$93(PageImpl.java:1553)
-	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
-	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
-	at com.microsoft.playwright.impl.PageImpl.waitForSelector(PageImpl.java:1552)
-	at com.microsoft.playwright.Page.waitForSelector(Page.java:8257)
-	at demo.Login.invalid_passwword(Login.java:79)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at demo.Login.main(Login.java:90)
-Caused by: com.microsoft.playwright.TimeoutError: Error {
-  message=&apos;Timeout 30000ms exceeded.
-  name=&apos;TimeoutError
-  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
-    at ProgressController.run (C:\Users\Asus\AppData\Local\Temp\playwright-java-3431928606575065110\package\lib\server\progress.js:78:26)
-    at Frame.waitForSelector (C:\Users\Asus\AppData\Local\Temp\playwright-java-3431928606575065110\package\lib\server\frames.js:619:23)
-    at FrameDispatcher.waitForSelector (C:\Users\Asus\AppData\Local\Temp\playwright-java-3431928606575065110\package\lib\server\dispatchers\frameDispatcher.js:105:103)
-    at FrameDispatcher._handleCommand (C:\Users\Asus\AppData\Local\Temp\playwright-java-3431928606575065110\package\lib\server\dispatchers\dispatcher.js:94:40)
-    at DispatcherConnection.dispatch (C:\Users\Asus\AppData\Local\Temp\playwright-java-3431928606575065110\package\lib\server\dispatchers\dispatcher.js:361:39)
-}
-Call log:
-- waiting for locator(&quot;text=Invalid email or password&quot;) to be visible
-
-	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:254)
-	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
-	... 36 more
-... Removed 24 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Command_line_suite-class-failed -->
-          <div class="suite-Command_line_suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">demo.Login</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
                   <a name="successful_login">
@@ -321,20 +212,20 @@ data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'invalid_email')
 data.setCell(0, 2, 'demo.Login')
-data.setCell(0, 3, 33524);
+data.setCell(0, 3, 5609);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'invalid_passwword')
+data.setCell(1, 1, 'successful_login')
 data.setCell(1, 2, 'demo.Login')
-data.setCell(1, 3, 31342);
+data.setCell(1, 3, 2617);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'successful_login')
+data.setCell(2, 1, 'invalid_passwword')
 data.setCell(2, 2, 'demo.Login')
-data.setCell(2, 3, 3795);
+data.setCell(2, 3, 2015);
 window.suiteTableData['Command_line_suite']= { tableData: data, tableDiv: 'times-div-Command_line_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 10 seconds</span>
               <div id="times-div-Command_line_suite">
               </div> <!-- times-div-Command_line_suite -->
             </div> <!-- times-div -->
@@ -366,26 +257,20 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">invalid_email</span>
-                <span class="method-start">9516 ms</span>
+                <span class="method-start">11467 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">invalid_passwword</span>
-                <span class="method-start">43046 ms</span>
+                <span class="method-start">17083 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">successful_login</span>
-                <span class="method-start">74391 ms</span>
+                <span class="method-start">19102 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">teardown</span>
-                <span class="method-start">78192 ms</span>
+                <span class="method-start">21723 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

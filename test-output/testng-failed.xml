@@ -7,8 +7,8 @@
         <methods>
           <include name="invalid_passwword"/>
           <include name="setup"/>
-          <include name="teardown"/>
           <include name="invalid_email"/>
+          <include name="teardown"/>
         </methods>
       </class> <!-- demo.Login -->
     </classes>
