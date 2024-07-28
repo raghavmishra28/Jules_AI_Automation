@@ -1,0 +1,20 @@
+# Compiled bytecode
+*.class
+
+# IDE files
+.idea/
+*.iml
+
+# Build directories
+/target/
+/bin/
+
+# Dependency directories
+/lib/
+
+# Logs
+*.log
+
+# OS-specific files
+.DS_Store
+Thumbs.db
